@@ -103,13 +103,11 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+/* paragraph Styling */
 p{
     word-wrap: break-word;
 }
 
-br{
-    padding-bottom: 80px;
-}
 /* Margin for the main, header, and rectangle */
  .main, .header{
     margin: 0 5%;
@@ -138,7 +136,7 @@ footer{
     font-weight: bold;
 }
 
-/* Footer Links Styling */
+/* Footer Links in Styling */
 footer > a{
     border-bottom: 3px white solid;
     padding: 5%;
@@ -153,6 +151,7 @@ h1{
     margin: 5%;
 }
 
+/* h2 styling */
 h2{
     font-size: 10vw;
 }
@@ -171,12 +170,13 @@ a{
     color: white;
 }
 
+/* form styling */
 form{
     display: flex;
     flex-direction: column;
 }
 
-
+/* styling for the submit button and fields */
 #replaycode, input, select{
     width: 60%;
 }
@@ -217,6 +217,7 @@ main video{
     margin: auto;
 }
 
+/* Center the Money image on the editing service page*/
 .center-img{
     display: flex;
     margin: auto;
@@ -342,24 +343,29 @@ main video{
         width: 80%;
     }
 
+    /* Styliong for the main and header sextion of the landing page */
     .lpheader, .lpmain{
         border: solid;
     }
 
+    /* "Clyric Allen" Styling  */
     .lpheader{
         border-radius: 0px 20px 20px 0px;
     }
 
+    /* styling for the left side of the landing page card */
     .lpmain{
         border-radius: 20px 0px 0px 20px;
     }
 
+    /* Styling for the H1 if the landing pagw */
     .lph1{
         margin: 78% 0% 79% 0%;        
         word-wrap: break-word;
         background-color: white;
     }
 
+    /* Footer Styking */
     footer{
         flex-direction: column;
         grid-template-columns: 25% 25% 25% 25%;
@@ -367,6 +373,7 @@ main video{
         grid-template-rows:none;
     }
 
+    /* Styling for each of the links in the footer */
     footer > a{
     border-right: 3px white solid;
     border-bottom: none;
@@ -378,11 +385,13 @@ main video{
     margin: 0% 10% 0% 10%;
     } 
 
+    /* Styling for the videos */
     main video{
         height: 50%;
         width: 50%;
     }
 
+    /* Styling for the H2 that are in the main section */
     main h2{
     text-align: center;
     padding-bottom: 3%;
