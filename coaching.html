@@ -12,38 +12,101 @@
     </header>
     <div class ="rect"></div>
     <main class="main">
-        <h2>Overview</h2>
+        <h2 class="inter-800">FGC<br>Overview</h2>
         <p>Hi my name is Clyric Allen or if you seen my smash.gg name, ProtoOrCly. I have been playing all different type of fighting games for almost a decade. Event though I've never won a  major I can still help you with fundamentals.</p>
+    <br>
         
-        <video>
-            <source src="https://youtu.be/UnalRXTvp5Y" type="video/mp4">
-        </video>
-        <h2>Just to be clear on what fundamentals are:</h2>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="Slides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/Tekken_Rank.png" class="show">
+        <div class="text">Tekken 6 Rank</div>
+    </div>
+
+    <div class="Slides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/TekkenStats.png" class="show">
+        <div class="text">Other Tekken Stats</div>
+    </div>
+
+    <div class="Slides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/SF6Rank.png" class="show">
+        <div class="text">Street Fighter 6 Rank</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+
+    <br>
+    </div>
+        
+        <h3>Goals</h3>
+
+        <p>Help you improve your fundamentals and get you to an Intermediate level</p>
+
+        <h3>More About Fundamentals</h3>
+        <p>You'll learn about:</p>
         <ul>
             <li>Neutral in General</li>
             <li>Game specific Neutral</li>
             <li>Input shortcuts</li>
             <li>Reading your opponent</li>
+            <li>Defense</li>
         </ul>
 
-        <h2>Pricing</h2>
+        <!-- Pricing Section -->
+        <h3>Pricing</h3>
         <ul>
             <li>VOD review of 3 games = 10$</li>
             <li>Running Some Games = 20$</li>
         </ul>
 
-        <h2>What You'll Need to Do</h2>
+        <!-- Submit Form -->
+        <h3>What You'll Need to Do</h3>
         <ol>
-            <li>Choose a game.</li>
+            <form >
+
+            <li><label for="games">Choose a game.</label></li>
+
+            <!--Select list for games to choose-->
+            <select name="games">
+            <option value="2XKO">2XKO</option>
+            <option value="Guilty_Gear">Guilty Gear Strive</option>
+            <option value="FighterZ">Dragonball FighterZ</option>
+            <option value="SF6">Street Fighter 6</option>
+            <option value="Tekken">Tekken 8</option>
+            </select>
+            
             <li>Send me a the replay code with comments describing what you want improve on or any other info.</li>
+                <input type="text" id="replaycode" name="replaycode" placeholder="Replay code" min="
+                3" max="20" required>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
         </ol>
     </main>
 
+    <!-- Footer for other links -->
     <footer>
         <a href="editing.html">Editing</a>
         <a href="coaching.html">Coaching</a>
         <a href="socials.html">Socials</a>
         <a href="faq.html">FAQ</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
