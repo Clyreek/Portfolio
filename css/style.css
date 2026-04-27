@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* reset */
 *{
     margin: 0;
@@ -5,6 +8,13 @@
     box-sizing: border-box;
 }
 
+/* Inter Font Stylings */
+.inter-800 {
+  font-family: "Inter", sans-serif;
+  /* font-optical-sizing: auto; CSS says "auto" doesn't exost for some reason so I'm just commenting this out */
+  font-weight: 800;
+  font-style: normal;
+}
 /* Landing Page CSS cause I'm dumb. */
 /* I Didn't read "1 CSS Sheet" Until I already made most of this */
 
@@ -12,15 +22,15 @@
 .lpbody{
     display: inline-flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     position: relative;
     flex-direction: column;
     background-color: rgb(255, 217, 179);
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family:Arial, Helvetica, sans-serif;
     margin-left: 35%;
+    font-family: "Inter", sans-serif;
 }
 
 /* Landing page header and main */
@@ -31,22 +41,27 @@
 
 /* Landing page main */
 .lpmain{
-    padding-right: 25%;
-    border-radius: 0px 0px 20px 20px;
+    padding-right: 30%;
+    border-radius: 0px 0px 50px 50px;
+    border-style: none solid solid solid;
 }
 
-/* landing page header */
+/* landing page header, Clyric Allen */
 .lpheader{
+    padding-right: 10%;
     text-align: center;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
     height: 100%;
+    border-style: solid solid none solid;
+
 }
 
 /* landing page h1 */
 .lph1{
     margin: 20% 0% 10% 10%;
     word-wrap: break-word;
-
+    background-color: rgb(128, 187, 100);
+    border-radius: 20px;
 }
 
 /*  Landing Page Links */
@@ -79,21 +94,21 @@
     padding-top: 10%;
 }
 
-/* .lpa:hover{
-    color:white;
-    background-color: black;
-} */
 
 /* REGULAR CSS */
 
 /* Body Styling */
 body{
-    background-color: rgb(255, 217, 179);
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 217, 179, 1);
+    font-family: "Inter", sans-serif;
 }
 
 p{
     word-wrap: break-word;
+}
+
+br{
+    padding-bottom: 80px;
 }
 /* Margin for the main, header, and rectangle */
  .main, .header{
@@ -110,6 +125,7 @@ p{
 /* Footer Styling */
 footer{
     display: grid;
+    bottom: 0;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -132,14 +148,21 @@ footer > a{
 /* H1 Styling */
 h1{
     font-size: 200%;
+    font-weight: 800;
     text-align: center;
-    margin-top: 5%;
+    margin: 5%;
+}
+
+h2{
+    font-size: 10vw;
 }
 
 /* formatting for headings */
 h2, h3{
     text-align: left;
-    padding: 1% 0 1% 0;
+    padding: 5% 0 5% 0;
+    letter-spacing: 5px;
+    font-weight: 700;
 }
 
 /* links styling */
@@ -148,17 +171,28 @@ a{
     color: white;
 }
 
-/* ul */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#replaycode, input, select{
+    width: 60%;
+}
+
+/* Ul Styling */
 ul, ol{
     margin-left: 5%;
 }
 
-
+/* Wrapping for the Heading and pictures of the Social Page */
 .social-wrap{
     display: flex;
     justify-content: space-between;
 }
 
+/* Styling for the pictures in the Social page */
 .social{
     display: flex;
     position: relative;
@@ -170,15 +204,23 @@ ul, ol{
     margin-top: 1%;
 }
 
-video{
+/* Styling for the p element in the social page */
+.social_p{
+    margin-right: 20%;
+}
+
+/* Styling for the videos in the main section */
+main video{
     display: flex;
     width: 100%;
-    min-width: 100%;
-    min-height: 100%;
     position: relative;
     margin: auto;
 }
 
+.center-img{
+    display: flex;
+    margin: auto;
+}
 
 /* Big green rectangle */
 .rect{
@@ -186,8 +228,102 @@ video{
     background-color: rgb(128, 187, 151);
 }
 
+
+/* Slideshow container styling */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.Slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Page Number */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* styling for pictures in the Slideshow-Container */
+.show{
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Fade Transition */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /* Desktop View */
 @media screen and (min-width: 1024px){
+    
+    /* Styling */
     .lpbody{
     display:flex;
     justify-content: center;
@@ -198,11 +334,19 @@ video{
     background-color: rgb(255, 217, 179);
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Inter", sans-serif;
+    }
+
+    /* container for links */
+    .container{
+        width: 80%;
+    }
+
+    .lpheader, .lpmain{
+        border: solid;
     }
 
     .lpheader{
-        border-left: solid black;
         border-radius: 0px 20px 20px 0px;
     }
 
@@ -211,8 +355,9 @@ video{
     }
 
     .lph1{
-        margin: 62% 0% 62% 0%;        
+        margin: 78% 0% 79% 0%;        
         word-wrap: break-word;
+        background-color: white;
     }
 
     footer{
@@ -220,11 +365,11 @@ video{
         grid-template-columns: 25% 25% 25% 25%;
         grid-auto-columns: 100%;
         grid-template-rows:none;
-
     }
 
     footer > a{
     border-right: 3px white solid;
+    border-bottom: none;
     padding: 5%;
     font-size: 1rem;
     }
@@ -233,12 +378,35 @@ video{
     margin: 0% 10% 0% 10%;
     } 
 
-    video{
-        height: 40%;
-        width: 40%;
-        max-width: 30%;
-        max-height: 50%;
+    main video{
+        height: 50%;
+        width: 50%;
     }
+
+    main h2{
+    text-align: center;
+    padding-bottom: 3%;
+    }
+
+    h1{
+        margin: 1%;
+    }
+
+    h2{
+        font-size: 2vw;
+    }
+    h3{
+        text-align: left;
+    }
+
+    #replaycode, select{
+        width: 30%;
+    }
+
+    input{
+        width: 20%;
+    }
+    
 }
 
 
