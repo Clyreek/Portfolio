@@ -348,20 +348,18 @@ main iframe{
     /* Styliong for the main and header sextion of the landing page */
     .lpheader, .lpmain{
         border-style: none;
-        outline-style: solid;
 
     }
 
     /* "Clyric Allen" Styling  */
     .lpheader{
         border-radius: 0px 20px 20px 0px;
-        border-right: solid;
+        border-left: solid black; 
     }
 
     /* styling for the left side of the landing page card */
     .lpmain{
         border-radius: 20px 0px 0px 20px;
-        border-left: solid 2px black;
     }
 
     /* Styling for the H1 if the landing pagw */
