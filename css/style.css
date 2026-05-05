@@ -210,8 +210,9 @@ ul, ol{
 }
 
 /* Styling for the videos in the main section */
-main video{
+main iframe{
     display: flex;
+    height: 25vh;
     width: 100%;
     position: relative;
     margin: auto;
@@ -336,6 +337,7 @@ main video{
     overflow-x: hidden;
     overflow-y: hidden;
     font-family:"Inter", sans-serif;
+    /* border: solid 1px black; */
     }
 
     /* container for links */
@@ -345,17 +347,21 @@ main video{
 
     /* Styliong for the main and header sextion of the landing page */
     .lpheader, .lpmain{
-        border: solid;
+        border-style: none;
+        outline-style: solid;
+
     }
 
     /* "Clyric Allen" Styling  */
     .lpheader{
         border-radius: 0px 20px 20px 0px;
+        border-right: solid;
     }
 
     /* styling for the left side of the landing page card */
     .lpmain{
         border-radius: 20px 0px 0px 20px;
+        border-left: solid 2px black;
     }
 
     /* Styling for the H1 if the landing pagw */
@@ -386,8 +392,8 @@ main video{
     } 
 
     /* Styling for the videos */
-    main video{
-        height: 50%;
+    main iframe{
+        height: 50vh;
         width: 50%;
     }
 
@@ -403,6 +409,10 @@ main video{
 
     h2{
         font-size: 2vw;
+    }
+
+    .faq_h2{
+        text-align: left;
     }
     h3{
         text-align: left;
